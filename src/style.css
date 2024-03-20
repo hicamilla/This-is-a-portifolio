@@ -7,6 +7,7 @@
     --alert-color: #FF5398;
     --body-font: "Manrope", sans-serif;
 }
+
 /*
 *,
 ::after,
@@ -20,7 +21,7 @@ body {
     font-family: var(--body-font);
 }
 
-.container{
+.container {
     border-bottom-width: 10px;
     border-top-width: 10px;
     padding-bottom: 15px;
@@ -31,7 +32,7 @@ body {
 }
 
 /* Introduction and Image*/
-.container-apresentation{
+.container-apresentation {
     display: flex;
     align-items: center;
     padding: 50px 40px 0px;
@@ -71,12 +72,12 @@ body {
     flex-shrink: 0;
     background: url(images/profile.png) lightgray 50% / cover no-repeat, #494949;
     stroke-width: 1px;
-    stroke:#000;    
+    stroke: #000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* Buttons*/
-.button{
+.button {
     display: flex;
     font-family: var(var(--body-font));
     padding-left: 43px;
@@ -124,7 +125,7 @@ body {
 }
 
 /*Footer*/
-.footer{
+.footer {
     color: var(--secondary-text-color);
     margin-left: 66px;
     margin-right: 66px;
@@ -135,20 +136,21 @@ body {
     position: absolute;
 }
 
-.container-footer{
+.container-footer {
     font-size: 26px;
     text-align: center;
 }
 
-.sayhi{
-    color:var(--secondary-text-color);
+.sayhi {
+    color: var(--secondary-text-color);
     padding-top: 90px;
 
 }
-.email{
+
+.email {
     color: var(--button-tx-color);
     font-size: 26px;
-    text-decoration:none !important;
+    text-decoration: none !important;
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -182,21 +184,24 @@ body {
 }
 
 
-.icons{
+.icons {
     text-align: center;
     padding-bottom: 30px;
 }
+
 .linkedin,
 .github,
 .twitter {
     font-size: 20px;
     line-height: 2.0;
 }
-.linkedin{
-  font-size: 20px;
+
+.linkedin {
+    font-size: 20px;
 }
+
 .github,
-.twitter{
+.twitter {
     padding-left: 7px;
 }
 
