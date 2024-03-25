@@ -183,18 +183,25 @@ h2{
 
 /* RESUME */
 
-h4{
-    color:#9D9D9D;
+.about-section h1{
+    color: var(--primary-text-color);
+    font-size: 66px;
+}
+
+.about-section h4{
+    color:var(--secondary-text-color);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
     overflow-wrap: break-word;
-    padding: 0 50px;
     letter-spacing: 0.5px;
 }
 
-.resumepic{
-    border-radius: 20px;
+.about-section p{
+    color: var(--secondary-text-color);
+    font-size: 17px;
+    
 }
+
 /*responsive*/
 @media(max-width:900px){
 
