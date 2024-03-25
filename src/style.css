@@ -28,7 +28,12 @@ body {
 .navbar-toggler-icon:hover {
     color: var(--button-tx-color);
 }
-
+.box
+{
+    background-color: #202020;
+    display: grid;
+    padding: 0px 0px 10px 130px;
+}
 h1 {
     color: var(--primary-text-color);
     font-size: 64px;
@@ -119,12 +124,14 @@ h1 {
 .work-title{
     color: var(--primary-text-color);
     font-family: var(--body-font);
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     max-width: auto;
     line-height: 1.5;
     letter-spacing: 1px;
     text-transform:uppercase;
+    text-shadow: 2px 2px 2px #3B3B3B;
+    padding:40px 0 70px 0px;
 }
 
 h2{
@@ -146,6 +153,7 @@ h2{
 .btn-branding{
     display: inline-block;
     text-decoration: none;
+    letter-spacing: 0.3px;
     font-weight: 500;
     font-size: 17px;
     color: var(--button-tx-color);
@@ -155,6 +163,12 @@ h2{
     padding: 15px 35px;
     margin: 20px 50px;
     }
+.btn-branding:hover,
+.btn-branding:focus,
+.btn-branding:active {
+    background-color: #FF5398;
+    color: white;
+}
 
 .project-description{
     padding: 120px 60px;
@@ -167,23 +181,51 @@ h2{
     box-shadow: 1px 1px 3px rgba(110, 110, 110, 0.718);
 }
 
+/* RESUME */
+
+h4{
+    color:#9D9D9D;
+    font-size: 20px;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    padding: 0 50px;
+    letter-spacing: 0.5px;
+}
+
+.resumepic{
+    border-radius: 20px;
+}
 /*responsive*/
 @media(max-width:900px){
-    .project-description{
-        padding: 0;
-        text-align: center;
-        padding-top: 30px !important;
-    }
-    h1{
+
+    h1 {
         font-size: 40px;
         line-height: 1.2;
         padding-bottom: 17px;
     }
 
+    h4 {
+       text-align: center;
+    }
+
+    .box,
+    .work-title{
+        padding: 0;
+    }
+
+    .project-description{
+        padding: 0;
+        text-align: center;
+        padding-top: 30px !important;
+    }
+    
     .hero,
     .sprofile{
         text-align: center !important;  
     }
 
-
+    .myname{
+        font-size: 50px;
+        text-align: center;
+    }
 }
