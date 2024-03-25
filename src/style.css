@@ -41,7 +41,7 @@ h1 {
 }
 
 .profileimage {
-    display:inline-flex;    
+    display:inline-flex;   
     width: 100%;
     height: 100%;
     border-radius: inherit;
@@ -50,7 +50,7 @@ h1 {
     image-rendering: auto;
 }
 
-p {
+.sprofile {
     color: var(--secondary-text-color);
     font-size: 16px;
     font-weight: 500;
@@ -114,3 +114,68 @@ p {
     transform: scaleY(1);
 }
 /*End Frst Button*/
+
+/*Latest Work*/
+.work-title{
+    color: var(--primary-text-color);
+    font-family: var(--body-font);
+    font-size: 20px;
+    font-weight: 600;
+    max-width: auto;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+}
+
+h2{
+    color:var(--primary-text-color);
+    font-size:64px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.3px;
+}
+
+.dwork{
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+}
+
+.btn-branding{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--button-tx-color);
+    border-radius: 10px;
+    vertical-align: middle;
+    background: var(--button-bg-color);
+    padding: 15px 35px;
+    margin: 20px 50px;
+    }
+
+.project-description{
+    padding: 120px 60px;
+}
+
+/*responsive*/
+@media(max-width:900px){
+    .project-description{
+        padding: 0;
+        text-align: center;
+    }
+    h1{
+        font-size:40px;
+        line-height: 1.2;
+        padding-bottom: 17px;
+    }
+
+    .hero,
+    .sprofile{
+        text-align: center !important;  
+    }
+
+    
+}
