@@ -74,7 +74,7 @@ h1 {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     background: var(--button-bg-color);
-    transition: color 0.3s;
+    transition: color 0.5s;
     padding: 15px 35px;
     margin: 20px 50px;
 }
@@ -158,6 +158,13 @@ h2{
 
 .project-description{
     padding: 120px 60px;
+    text-align: justify;
+    letter-spacing: 0.1;
+}
+
+.pimage{
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgba(110, 110, 110, 0.718);
 }
 
 /*responsive*/
@@ -165,9 +172,10 @@ h2{
     .project-description{
         padding: 0;
         text-align: center;
+        padding-top: 30px !important;
     }
     h1{
-        font-size:40px;
+        font-size: 40px;
         line-height: 1.2;
         padding-bottom: 17px;
     }
@@ -177,5 +185,5 @@ h2{
         text-align: center !important;  
     }
 
-    
+
 }
