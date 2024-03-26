@@ -32,7 +32,7 @@ body {
 {
     background-color: #202020;
     display: grid;
-    padding: 0px 0px 10px 130px;
+    padding: 60px 10px 10px 60px;
 }
 h1 {
     color: var(--primary-text-color);
@@ -40,7 +40,6 @@ h1 {
     font-weight: 600;
     overflow-wrap: break-word;
     padding: 50px;
-    max-width: auto;
     line-height: 1.5;
     letter-spacing: 1px;
 }
@@ -160,8 +159,7 @@ h2{
     border-radius: 10px;
     vertical-align: middle;
     background: var(--button-bg-color);
-    padding: 15px 35px;
-    margin: 20px 50px;
+    padding: 15px 35px;    
     }
 .btn-branding:hover,
 .btn-branding:focus,
@@ -183,26 +181,66 @@ h2{
 
 /* RESUME */
 
-.about-section h1{
-    color: var(--primary-text-color);
-    font-size: 66px;
+.about-section{
+    padding: 60px 10px 10px 60px;
+}
+.about-section-content{
+    margin: 30px;
+    padding-right: 20px;
+    padding-top: 15px;
 }
 
-.about-section h4{
-    color:var(--secondary-text-color);
-    font-size: 20px;
-    font-weight: 700;
-    overflow-wrap: break-word;
-    letter-spacing: 0.5px;
+.about-section h1{
+    font-size: 64px;
+    line-height: 80px;
+    padding: 10px 20px 16px 0px !important
+}
+
+.about-section h2{
+    font-size: 18px;
+    padding-bottom: 10px;
 }
 
 .about-section p{
-    color: var(--secondary-text-color);
-    font-size: 17px;
+    color:var(--secondary-text-color);
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.imageresume{
+    width: 70%;
+    height: 80%;
+    border-radius: 40px;
+    object-position: center;
+    object-fit: cover;
+    box-shadow: 0px 1px 3px rgba(110, 110, 110, 0.718);
     
 }
 
-/*responsive*/
+.resume-btn{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--button-tx-color);
+    border-radius: 10px;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: var(--button-bg-color);
+    transition: color 0.5s;
+    padding: 13px 27px;
+}
+
+.resume-btn:hover,
+.resume-btn:focus,
+.resume-btn:active {
+    background-color: var(--alert-color);
+    color: white;
+}
+
+/*RESPONSIVE*/
 @media(max-width:900px){
 
     h1 {
@@ -211,14 +249,10 @@ h2{
         padding-bottom: 17px;
     }
 
-    h4 {
-       text-align: center;
-    }
-
     .box,
     .work-title{
         padding: 0;
-    }
+    }   
 
     .project-description{
         padding: 0;
@@ -231,8 +265,29 @@ h2{
         text-align: center !important;  
     }
 
-    .myname{
-        font-size: 50px;
-        text-align: center;
+    .about-section{
+        padding: 10px 60px 10px 60px;
     }
+    .about-section-content{
+        text-align: center;
+        margin: 0;
+    }
+
+    .about-section h1{
+        font-size: 50px;
+        line-height: 50px;
+        padding: 15px 0px 10px 0px !important;
+    }
+
+    .about-section h2{
+        padding-top: 12px;
+        line-height: 30px;        
+    }
+
+    .resume-btn{
+        padding: 13px 40px !important;
+        
+    }
+
+
 }
