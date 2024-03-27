@@ -253,6 +253,66 @@ h2{
     font-size: 18px;
 }
 
+/*CONTACT*/
+
+.emailcontact{
+    color:var(--secondary-text-color);
+    font-size:47px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    padding-left: 50px;
+}
+
+.icon-social {
+    display: inline-flex;
+    padding-left: 34px;
+    padding-top:40px;
+}
+
+.emailcontact{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.emailcontact:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: var(--alert-color);
+    height: 3px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.emailcontact:hover:before,
+.emailcontact:focus:before,
+.emailcontact:active:before {
+    right: 0px;
+}
+
+.ph--read-cv-logo {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='%23929292' d='m210.78 39.25l-130.25-23A16 16 0 0 0 62 29.23l-29.75 169a16 16 0 0 0 13 18.53l130.25 23a16 16 0 0 0 18.54-13l29.75-169a16 16 0 0 0-13.01-18.51M178.26 224L48 201L77.75 32L208 55ZM89.34 58.42a8 8 0 0 1 9.27-6.48l83 14.65a8 8 0 0 1-1.39 15.88a8.36 8.36 0 0 1-1.4-.12l-83-14.66a8 8 0 0 1-6.48-9.27M83.8 89.94a8 8 0 0 1 9.27-6.49l83 14.66a8 8 0 0 1-1.4 15.89a7.55 7.55 0 0 1-1.41-.13l-83-14.65a8 8 0 0 1-6.46-9.28m-5.55 31.51a8 8 0 0 1 9.27-6.45l41.48 7.29a8 8 0 0 1-1.38 15.88a8.27 8.27 0 0 1-1.4-.12l-41.5-7.33a8 8 0 0 1-6.47-9.27'/%3E%3C/svg%3E");
+}
+
+
 /*RESPONSIVE*/
 @media(max-width:900px){
 
@@ -299,8 +359,17 @@ h2{
 
     .resume-btn{
         padding: 13px 40px !important;
-        
     }
+
+    .icon-social{
+        text-align: center !important;
+    }
+
+    .emailcontact{
+        font-size: 26px;
+    }
+
+
 
 
 }
