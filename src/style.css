@@ -342,6 +342,11 @@ footer .icons {
         text-align: center !important;  
     }
 
+    .about-hp{
+        margin-left: 0px !important;
+
+    }
+
     .content-container{
         padding: 10px 60px 10px 60px;
     }
@@ -372,11 +377,13 @@ footer .icons {
 
     .emailcontact{
         font-size: 26px;
+        display: center !important;
     }
 
     .footerframe {
         display: block !important;
         align-items: center !important;
+        margin-left: 0px !important;
         
     }
 
