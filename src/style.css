@@ -377,7 +377,6 @@ footer .icons {
 
     .emailcontact{
         font-size: 26px;
-        display: center !important;
     }
 
     .footerframe {
@@ -390,14 +389,13 @@ footer .icons {
     .hi {
     color: var(--secondary-text-color);
     font-size: 37px !important;
-    text-align: center;
+    text-align: left;
     font-weight: 600 !important;
 }
 
     .click-mail {
     color: var(--secondary-text-color);
-    font-size:36px !important;
-    text-align: center !important;
+    font-size:25px !important;
     padding: 0 !important;
 }
 
@@ -406,8 +404,6 @@ footer .icons {
     align-content: center !important;
     justify-content: center !important;
     display: block !important;
-
-    
 }
 
 }
