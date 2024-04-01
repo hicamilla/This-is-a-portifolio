@@ -383,6 +383,7 @@ footer .icons {
         display: block !important;
         align-items: center !important;
         margin-left: 0px !important;
+        padding-top: 30px !important;
         
     }
 
@@ -391,6 +392,7 @@ footer .icons {
     font-size: 37px !important;
     text-align: left;
     font-weight: 600 !important;
+    
 }
 
     .click-mail {
@@ -404,6 +406,7 @@ footer .icons {
     align-content: center !important;
     justify-content: center !important;
     display: block !important;
+    padding-bottom: 60px;
 }
 
 }
